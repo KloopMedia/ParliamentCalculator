@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ParliamentCalculator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/ParliamentCalculator/static/js/main.fc7cc19f.chunk.js",
+    "main.js.map": "/ParliamentCalculator/static/js/main.fc7cc19f.chunk.js.map",
+    "runtime-main.js": "/ParliamentCalculator/static/js/runtime-main.da924a04.js",
+    "runtime-main.js.map": "/ParliamentCalculator/static/js/runtime-main.da924a04.js.map",
+    "static/js/2.1451b32e.chunk.js": "/ParliamentCalculator/static/js/2.1451b32e.chunk.js",
+    "static/js/2.1451b32e.chunk.js.map": "/ParliamentCalculator/static/js/2.1451b32e.chunk.js.map",
+    "index.html": "/ParliamentCalculator/index.html",
+    "precache-manifest.14b4ad5ca1c8b37c9c4486bb26ac543d.js": "/ParliamentCalculator/precache-manifest.14b4ad5ca1c8b37c9c4486bb26ac543d.js",
+    "service-worker.js": "/ParliamentCalculator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/ParliamentCalculator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.1451b32e.chunk.js.LICENSE.txt": "/ParliamentCalculator/static/js/2.1451b32e.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ParliamentCalculator/static/media/logo.5d5d9eef.svg",
+    "static/media/Бир Бол.png": "/ParliamentCalculator/static/media/Бир Бол.d6ae1889.png",
+    "static/media/Кыргызстан.png": "/ParliamentCalculator/static/media/Кыргызстан.5f98b378.png",
+    "static/media/Мекен Ынтымагы.png": "/ParliamentCalculator/static/media/Мекен Ынтымагы.b9d0c5d3.png",
+    "static/media/Политическая партия ветеранов войны в Афганистане и участников других боевых конфликтов.png": "/ParliamentCalculator/static/media/Политическая партия ветеранов войны в Афганистане и участников других боевых конфликтов.d975dd8f.png",
+    "static/media/Чон казат.png": "/ParliamentCalculator/static/media/Чон казат.3f7000b1.png",
+    "static/media/Ыйман Нуру.png": "/ParliamentCalculator/static/media/Ыйман Нуру.e1489fd6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da924a04.js",
+    "static/js/2.1451b32e.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.fc7cc19f.chunk.js"
+  ]
+}
