@@ -69,6 +69,7 @@ class Parties extends React.Component {
             partyInfo.parlamentResultChairs = 0
             partyInfo.parlamentResultPercents = 0
             partyInfo.residual = 0
+            partyInfo.monopolyResidual = 0
             partyInfo.message = ''
 
             parties[value]=partyInfo
@@ -217,7 +218,9 @@ class Parties extends React.Component {
                             
                             let parlamentResultPercents = voteResult * 100 / (totalPassedParlamentPercent - monopolyPercent)  
 
-                            console.log(Math.floor((monopolyChairs-electionsConfig.maxChairsForParty) * parlamentResultPercents / 100))  
+                            console.log(Math.floor((monopolyChairs-electionsConfig.maxChairsForParty) * parlamentResultPercents / 100)) 
+                            
+                            parties[party].monopolyResidual =  (((monopolyChairs-electionsConfig.maxChairsForParty) * parlamentResultPercents / 100) - (Math.floor((monopolyChairs-electionsConfig.maxChairsForParty) * parlamentResultPercents / 100))).toFixed(2)
                             parties[party].parlamentResultChairs += Math.floor((monopolyChairs-electionsConfig.maxChairsForParty) * parlamentResultPercents / 100)
                         }
 
@@ -226,14 +229,17 @@ class Parties extends React.Component {
                 })  
                 
                  //Распределить мандаты если остались после первичного распределения (если Монополия)
-                if (totalChairs != electionsConfig.totalChairs){
+                if (totalChairs != electionsConfig.totalChairs){                    
 
-                    let sortedParties = this.sortProperties(parties, 'residual', true, true)
+                    let sortedParties = this.sortProperties(parties, 'monopolyResidual', true, true)
 
                     let distributeLeft = electionsConfig.totalChairs - totalChairs
 
-                    sortedParties.forEach(function (item) {
-                        console.log(item[0]);
+                    console.log('CHECK');
+                    console.log(distributeLeft);
+                    console.log(sortedParties);
+
+                    sortedParties.forEach(function (item) {                        
 
                         if (distributeLeft > 0){
                             if (item[0] != monopolyParty){
@@ -274,6 +280,7 @@ class Parties extends React.Component {
                 //parties[party].parlamentResultPercents = 0
                 parties[party].parlamentResultChairs = 0
                 parties[party].residual = 0
+                parties[party].monopolyResidual = 0
                 parties[party].message = ''
             })             
         }  
